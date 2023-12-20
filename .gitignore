@@ -20,4 +20,4 @@ install_manifest.txt
 *_autogen
 CMakeLists.txt.user*
 moc_*.cpp
-ru.auroraos.TinyBrowser
+ru.auroraos.WebViewBrowser

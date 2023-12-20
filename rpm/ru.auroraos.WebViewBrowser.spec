@@ -1,20 +1,21 @@
-Name:       ru.auroraos.untitled3
-Summary:    My Aurora OS Application
+Name:       ru.auroraos.WebViewBrowser
+Summary:    WebView Browser
 Version:    0.1
 Release:    1
+Group:      Qt/Qt
 License:    BSD-3-Clause
-URL:        https://auroraos.ru
+URL:        https://developer.auroraos.ru/open-source
 Source0:    %{name}-%{version}.tar.bz2
-
 Requires:   sailfishsilica-qt5 >= 0.10.9
+BuildRequires:  pkgconfig(aurorawebview)
 BuildRequires:  pkgconfig(auroraapp)
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)
-
+BuildRequires:  pkgconfig(Qt5Network)
 
 %description
-Short description of my Aurora OS Application
+The project provides an example of using WebView.
 
 %prep
 %autosetup
@@ -27,7 +28,9 @@ Short description of my Aurora OS Application
 %make_install
 
 %files
+%defattr(-,root,root,-)
 %{_bindir}/%{name}
+%defattr(644,root,root,-)
 %{_datadir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
