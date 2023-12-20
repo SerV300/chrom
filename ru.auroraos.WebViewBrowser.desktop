@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=ru.auroraos.WebViewBrowser
+Exec=/usr/bin/ru.auroraos.WebViewBrowser
+Name=CEF Browser
+Name[ru]=CEF Браузер
+
+[X-Application]
+Permissions=Internet
+OrganizationName=ru.auroraos
+ApplicationName=WebViewBrowser

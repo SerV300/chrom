@@ -1,4 +1,4 @@
-# Tiny Browser
+# WebView Browser
 
 Проект представляет собой пример использования WebView на движке CEF.
 
@@ -23,19 +23,19 @@
 
 Проект имеет стандартную структуру приложения на базе C++ и QML для ОС Аврора.
 
-* Файл **[ru.auroraos.ChromiumTinyBrowser.pro](ru.auroraos.ChromiumTinyBrowser.pro)** описывает структуру проекта для системы сборки qmake.
-* Директория **[icons](icons)** содержит иконки приложения для поддерживаемых разрешений экрана.
-* Директория **[qml](qml)** содержит исходный код на QML и ресурсы интерфейса пользователя.
-    * Директория **[cover](qml/cover)** содержит реализации обложек приложения.
-    * Директория **[icons](qml/icons)** содержит дополнительные иконки интерфейса пользователя.
-    * Директория **[pages](qml/pages)** содержит страницы приложения.
-  * Файл **[ru.auroraos.ChromiumTinyBrowser.qml](qml/ru.auroraos.ChromiumTinyBrowser.qml)** предоставляет реализацию окна приложения.
-* Директория **[rpm](rpm)** содержит настройки сборки rpm-пакета.
-  * Файл **[ru.auroraos.ChromiumTinyBrowser.spec](rpm/ru.auroraos.ChromiumTinyBrowser.spec)** используется инструментом rpmbuild.
-* Директория **[src](src)** содержит исходный код на C++.
-  * Файл **[ru.auroraos.ChromiumTinyBrowser.cpp](src/ru.auroraos.TinyBrowser.cpp)** является точкой входа в приложение.
-* Директория **[translations](translations)** содержит файлы перевода интерфейса пользователя.
-* Файл **[ru.auroraos.ChromiumTinyBrowser.desktop](ru.auroraos.ChromiumTinyBrowser.desktop)** определяет отображение и параметры запуска приложения.
+* Файл **[ru.auroraos.WebViewBrowser.pro](ru.auroraos.WebViewBrowser.pro)** описывает структуру проекта для системы сборки qmake.
+* Каталог **[icons](icons)** содержит иконки приложения для поддерживаемых разрешений экрана.
+* Каталог **[qml](qml)** содержит исходный код на QML и ресурсы интерфейса пользователя.
+    * Каталог **[cover](qml/cover)** содержит реализации обложек приложения.
+    * Каталог **[icons](qml/icons)** содержит дополнительные иконки интерфейса пользователя.
+    * Каталог **[pages](qml/pages)** содержит страницы приложения.
+  * Файл **[ru.auroraos.WebViewBrowser.qml](qml/ru.auroraos.WebViewBrowser.qml)** предоставляет реализацию окна приложения.
+* Каталог **[rpm](rpm)** содержит настройки сборки rpm-пакета.
+  * Файл **[ru.auroraos.WebViewBrowser.spec](rpm/ru.auroraos.WebViewBrowser.spec)** используется инструментом rpmbuild.
+* Каталог **[src](src)** содержит исходный код на C++.
+  * Файл **[ru.auroraos.WebViewBrowser.cpp](src/ru.auroraos.WebViewBrowser.cpp)** является точкой входа в приложение.
+* Каталог **[translations](translations)** содержит файлы перевода интерфейса пользователя.
+* Файл **[ru.auroraos.WebViewBrowser.desktop](ru.auroraos.WebViewBrowser.desktop)** определяет отображение и параметры запуска приложения.
   
 ## Совместимость
 
@@ -43,7 +43,9 @@
 
 ## Сборка проекта
 
-Проект собирается обычным образом с помощью Аврора SDK.
+Необходимые зависимости:
+* libcef
+* ru.aurora.webview
 
 ## Снимки экранов
 
