@@ -3,7 +3,7 @@
 
 import QtQuick 2.6
 import Sailfish.Silica 1.0
-import ru.aurora.WebView 1.0
+import ru.auroraos.WebView 1.0
 
 Page {
     objectName: "mainPage"
